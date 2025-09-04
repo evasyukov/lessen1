@@ -3,6 +3,7 @@ import "./App.css";
 
 function App() {
   return (
+    // вся html разметка является декларативной, т.к. мы описываем какой результат хотим видеть
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -18,6 +19,7 @@ function App() {
           Learn React
         </a>
 
+        {/* див с датой императивный, т.к. мы указываем что нужно сделать, чтобы получить результат  */}
         <div className="date">{`Текущий год: ${new Date().getFullYear()}`}</div>
       </header>
     </div>
